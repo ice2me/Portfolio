@@ -1,0 +1,267 @@
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+* {
+	margin: 0;
+  padding: 0;
+
+}
+ul, li, a{
+  text-decoration: none;
+  list-style: none;
+  display: inline;
+}
+hr {
+  border: none; 
+  background-color: white; 
+  height: 2px; 
+}
+p:not(:nth-child(3n)) {
+  margin-right: 3%;
+}
+body{
+  position: relative;
+  min-height: 100%;
+  min-width: 500px;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+	font-size: 16px;
+	color: #000;
+	text-align:center;
+	font-family: 'Libre Baskerville', serif;
+  background-color: #e3c189;
+}
+/*-------------------Прелоадер на javascript--------------  */
+#p_prldr {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right:0;
+  bottom:0;
+  background: #18212e;
+  z-index: 1;
+}
+ 
+.contpre small {
+  font-size:25px;
+}
+ 
+.contpre {
+  position: absolute;
+  left: 50%;top: 48%;
+  margin-left:-125px;
+  margin-top:-75px;
+  color:#fff;
+  font-size:40px;
+  letter-spacing:-2px;
+  text-align:center;
+  line-height:35px;
+}
+ 
+
+#p_prldr .svg_anm {
+  position: absolute;
+  width: 300px;
+  height: 340px;
+  background: url(../img/zUR.gif) center center no-repeat;
+  background-size:300px;    
+  margin: -90px 0 0 -20px;
+}
+/*-------------------Прелоадер на javascript--------------  */
+
+
+
+
+/*__________________________GO___Style____________________________________________*/
+
+
+
+
+.header__inner {
+  width: 300px;
+  height: 20px;
+}
+.header__img {
+  float: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 20px auto 20px;
+}
+.header__img img {
+  width: 120px;
+  height: 150px;
+  border-radius: 10%;
+  margin: 10px 10px 0px 30px;
+}
+.header__name {
+  margin: 20px auto;
+  width: 300px;
+  position: absolute;
+  top: 0px;
+  right: 33%;
+}
+.header__jun h2 {
+  position: absolute;
+  margin: 60px 0 0 0 ;
+  padding: 10px 10px 10px 15px;
+  width: 400px;
+  top: 0px;
+  right: 30%;
+}
+.header__text{
+  position: absolute;
+  margin: 50px 0 0 0;
+  width: 60%;
+  top: 80px;
+  right: 20%;
+  font-size: 14px;
+}
+.header__info {
+  float: left;
+  display: inline-block;
+  margin: 200px 65px 10px 20px;
+  top: 0px;
+  font-size: 18px;
+}
+.header__phone img {
+  width: 10px;
+  height: 20px;
+  margin: -20px 5px -2px 10px
+}
+.header__email img {
+  width: 25px;
+  height: 20px;
+  margin: -20px 5px -2px 10px
+}
+.header__contacts a {
+  float: left;
+  width: 105px;
+  margin: 200px 5px 10px 10px;
+  top: 0px;
+  padding: 10px;
+  color: blue;
+  font-size: 14px;
+}
+.header__social-contacts {
+  float: left;
+  margin: 200px 0px 20px 70px;
+}
+.header__social-contacts img, a {
+  width: 40px;
+  height: 40px;
+}
+/*------------------software--------------------------*/
+.software {
+  float: left;
+  padding: 10px 10px 10px 10px;
+  width: 99%;
+  height: 100px;
+}
+.software__name {
+  float: left;
+}
+.software__name h3 {
+  font-size: 20px;
+  padding: 35px 0px 26px 30px;
+}
+.software__applications {
+  float: left;
+  padding: 20px 0px 10px 50px;
+}
+.software__applications img {
+  float: left;
+  width: 50px;
+  height: 50px;
+}
+
+/*------------------skills--------------------------*/
+.skills {
+  float: left;
+  padding: 10px 10px 10px 10px;
+  width: 99%;
+  height: 100px;
+}
+.skills__name {
+  float: left;
+  /*width: 20%;*/
+}
+.skills__name h3 {
+  font-size: 20px;
+  padding: 35px 0px 26px 30px;
+}
+.skills__inner {
+  float: right;
+  padding: 10px 0px 10px 0px;
+  width: 80%;
+  text-align: left;
+}
+/*------------------languages--------------------------*/
+.languages {
+  float: left;
+  padding: 10px 10px 10px 10px;
+  width: 99%;
+  height: 100px;
+}
+.languages h3 {
+  font-size: 20px;
+  padding: 35px 0px 26px 30px;
+}
+.languages__inner {
+  float: left;
+}
+.languages__text {
+  float: left;
+  padding: 35px 0px 10px 50px;
+  width: 80%
+  text-align: left;
+}
+/*------------------experience--------------------------*/
+.experience {
+  float: left;
+  padding: 10px 10px 10px 10px;
+  width: 99%;
+  height: 100px;
+}
+.experience h3 {
+  font-size: 20px;
+  padding: 35px 0px 26px 30px;
+}
+.experience__inner {
+  float: left;
+}
+.experience__text {
+  float: left;
+  padding: 30px 0px 10px 40px;
+  width: 80%;
+  text-align: left;
+}
+/*------------------education--------------------------*/
+.education {
+  float: left;
+  padding: 10px 10px 10px 10px;
+  width: 99%;
+  height: 100px;
+
+}
+.education h3{
+  font-size: 20px;
+  padding: 35px 0px 26px 30px;
+}
+.education__inner{
+  float: left;
+}
+.education__text {
+  float: left;
+  text-align: left;
+  padding: 20px 0px 10px 50px;
+  width: 80%
+}
+.footer img{
+  width: 100%;
+  height: 120px;
+}
+/*-----------------------------------------------------------------------------------*/
