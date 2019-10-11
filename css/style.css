@@ -1,37 +1,195 @@
-*, *:after, *:before {
-box-sizing: border-box;
-padding: 0;
-margin: 0;
-transition: .5s ease-in-out; /* добавим плавность переходов для всех элементов страницы*/
+*, *:after, *:before{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	transition: .5s ease-in-out; /*плавность переходов для всех элементов страницы*/
 }
 
 ul{
-  list-style: none;
+	list-style: none;
 }
 
-a {
-text-decoration: none;
-outline: none;
+a{
+	text-decoration: none;
+	outline: none;
+	color: #9d847d;
 }
 
-hr {
-  border: none; 
-  background-color: white; 
-  height: 2px; 
+hr{
+	border: none; 
+	background-color: white; 
+	height: 2px; 
 }
 
-img {
-display: block;
+img{
+	display: block;
 }
 
-h1, h2, h3, h4, h5, h6 {
-font-weight: normal;
-letter-spacing: 1px;
+h1, h2, h3, h4{
+	font-weight: normal;
+	letter-spacing: 1px;
 }
 
-p:not(:nth-child(3n)) {
-  margin-right: 3%;
+p:not(:nth-child(3n)){
+	margin-right: 3%;
 }
+body{
+	background-color: #ebc98b;
+	line-height: 1;
+	/*_________________GO___Style_________________________*/
+}
+.container{
+	max-width: 960px;
+	min-width: 460px;
+	margin: 0 auto;
+	padding: 0 15px;
+	font-size: 20px;
+	line-height: 1;
+	/*background-image: url(../img/bgfon.jpg)0 0 no-repeat;*/
+}
+/*----------------------<<Header>>------------------------*/
+.container__header{
+	display: flex;
+	padding: 10px;
+}
+.container__img{
+	width: 196px;
+	height: 246px;
+	position: relative;
+}
+.container__img img{
+	border-radius: 15%;
+	padding: 20px 30px 20px 30px;
+}
+.container__name{
+	position: relative;
+	left: 150px;
+	padding-top: 30px; 
+}
+.container__junior{
+	padding: 10px;
+	position: relative;
+	left: 100px;
+}
+.container__text{
+	width: 90%;
+	padding: 10px;
+	position: relative;
+	left: 50px;
+}
+.container__info{
+	display: flex;
+	justify-content: flex-start;
+}
+/*--------------------------------------------------------*/
+.container__dat{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	left: 20px;
+}
+.container__data{
+	padding: 15px;
+	text-align: center;
+}
+.container__adress{
+	padding: 5px;
+}
+/*-----------------------------------------*/
+.container__contacts{
+	display: flex;
+	align-items: flex-start;
+	position: relative;
+	left: 25px;
+	bottom: -20px;
+}
+.container__phone{
+	padding: 25px 15px 30px 50px;
+	position: relative;
+}
+.container__phone img{
+	position: absolute;
+	left: 25%;
+}
+.container__email{
+	padding: 25px 15px 30px 55px;
+	position: relative;
+}
+.container__email img{
+	position: absolute;
+	left: 25%;
+	bottom: 43%;
+	text-align: left;
+}
+/*------------------------------------------------*/
+.container__social ul{
+	display: flex;
+	justify-content: flex-start;
+	position: relative;
+	left: 80px;
+}
+.container__social li{
+	display: inline-block;
+	padding: 10px 10px 20px 25px;
+}
+
+/*------------------------------------------------*/
+.prof__box{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	left: 30px;
+}
+.prof__software{
+	display: flex;
+	justify-content: flex-start;
+	position: relative;
+	top: 3px;
+}
+.software__name{
+	padding: 15px;
+}
+	
+/*------------------------------------------------*/
+.software__applications{
+	padding: 10px 20px 20px 15px;
+}
+.software__applications ul{
+	display: flex;
+    justify-content: flex-start;
+}
+.software__applications li{
+	padding: 0 7px 0 0;
+}
+/*------------------------------------------------*/
+.skills, .languages,
+.experience, .education{
+	display: flex;
+	justify-content: flex-start;
+	position: relative;
+	top: 5px;
+}
+.skill__name, .languages__name,
+ .experience__name, .education__name{
+	padding: 10px 30px 20px 15px;
+	text-align: center;
+}
+.skill__box, .languages__box, 
+.experience__box, .education__box{
+	padding: 10px 30px 20px 15px;
+	text-align: center;
+}
+/*------------------------------------------------*/
+.footer__img img{
+	width: 100%;
+}
+
+
+
+
+
+
+
 
 /*-------------------Прелоадер на javascript--------------  */
 #p_prldr {
@@ -70,56 +228,3 @@ p:not(:nth-child(3n)) {
   margin: -90px 0 0 -20px;
 }
 /*-------------------Прелоадер на javascript--------------  */
-
-
-
-
-/*__________________________GO___Style_________________________________*/
-
-
-
-body {
-font-family: 'Open Sans', arial, sans-serif;
-font-size: 14px;
-line-height: 1;
-color: #373737;
-background: #f7f7f7;
-}
-
-/* добавим очистку потока для всех контейнеров, внутри которых задано обтекание дочерних элементов */
-header:after, footer:after{
-content: "";
-display: table;
-clear: both;
-} 
-/* стилевой класс, который управляет шириной контейнера сетки*/
-.container {
-margin: 0 auto;
-width: 100%;
-max-width: 960px;
-padding: 0 15px;
-display: flex;
-
-} 
-
-.header__img img {
- border-radius: 3%;
-}
-.container__header {
-  justify-content: flex-start;
-  flex-direction: row;
-  align-items: baseline;
-} 
-
-/*------------------software--------------------------*/
-
-
-/*------------------skills--------------------------*/
-
-/*------------------languages--------------------------*/
-
-/*------------------experience--------------------------*/
-
-/*------------------education--------------------------*/
-
-/*-------------------------------------------------------------*/
