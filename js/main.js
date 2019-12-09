@@ -1,13 +1,13 @@
-$ (function(){
-    $('.gallary__inner').magnificPopup({
-		delegate: 'a',
-		type: 'image',
-		tLoading: 'Loading image #%curr%...',
-		mainClass: 'mfp-img-mobile',
-		gallery: {
-			enabled: true,
-			navigateByImgClick: true,
-			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-		},
-	});
-});
+const anchors = document.querySelectorAll('a[href*="#"]')
+for (let anchor of anchors) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault()
+    
+    const blockID = anchor.getAttribute('href').substr(1)
+    
+    document.getElementById(blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  })
+}
