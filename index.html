@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Serhii Zuiev</title>
+	<script src="js/three.r92.min.js"></script>
+	<script src="js/vanta.globe.min.js"></script>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -32,7 +34,7 @@
 					<a href="#portfolio">PORTFOLIO</a>
 				</li>
 				<li>
-					<a href="#contact">CONTACT</a>
+					<a href="#contacts">CONTACT</a>
 				</li>
 			</ul>
 		</nav>
@@ -285,7 +287,7 @@
 			</div>
 		</div>
 	</section>
-	<footer id="contact">
+	<footer id="contacts">
 		<div class="contact">
 			<div class="contact__name">
 				<h2>Contacts</h2>
@@ -339,7 +341,15 @@
 			</div>
 		</div>
 	</footer>
-<script src="./js/main.js"></script>
+<script>
+VANTA.GLOBE({
+	el: "#about__me",
+	color: 0xfff,
+	backgroundColor: 0xc5a5d7,
+	size: 2.00
+})
+</script>
+<script src="js/main.js"></script>
 </div>
 </body>
 </html>

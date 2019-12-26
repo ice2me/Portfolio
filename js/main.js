@@ -5,3 +5,5 @@ $(document).ready(function(){       // плавное перемещение с�
 		$("body,html").animate({scrollTop: destination }, 2500);
 	});
 });
+
+
