@@ -4,15 +4,17 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Document</title>
+	<title>Serhii Zuiev</title>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+	<div class="full">
 	<header class="top">
 		<nav class="top__menu">
 			<ul>
 				<li>
-					<a href="#">HOME</a>
+					<a href="#top__page">HOME</a>
 				</li>
 				<li>
 					<a href="#about__me">ABOUT</a>
@@ -21,13 +23,20 @@
 					<a href="#education">RESUME</a>
 				</li>
 				<li>
-					<a href="#">WORKS</a>
+					<a href="#work">WORKS</a>
 				</li>
 				<li>
-					<a href="#">CONTACT</a>
+					<a href="#skills">SKILLS</a>
+				</li>
+				<li>
+					<a href="#portfolio">PORTFOLIO</a>
+				</li>
+				<li>
+					<a href="#contact">CONTACT</a>
 				</li>
 			</ul>
 		</nav>
+		<section id="top__page">
 		<div class="top__name">
 			<h1>I'm Serhii Zuiev</h1>
 		</div>
@@ -85,6 +94,10 @@
 				<img src="img/130906.png" alt="" width="70px" height="70px">
 			</a>
 		</div>
+			<div class="shadow">
+			</div>
+		</section>
+
 	</header>
 	<section id="about__me">
 		<div class="about">
@@ -177,7 +190,7 @@
 			<hr>
 		</div>
 	</section>
-	<section>
+	<section id="work">
 		<div class="work">
 			<div class="work__left">
 				<h2>WORK</h2>
@@ -220,11 +233,113 @@
 			<hr>
 		</div>
 	</section>
-
-	<footer>
-
+	<section id="skills">
+		<div class="skills">
+			<div class="skills__name">
+				<h2>Skills</h2>
+			</div>
+			<div class="skills__content">
+				<div class="skills__text">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+						Repudiandae porro omnis ex fugit cupiditate nesciunt aliquid,
+						provident voluptates labore. Ea iure, asperiores explicabo
+						rerum placeat dolor ex expedita autem magni!
+					</p>
+				</div>
+					<div class="skill__box">
+						<ul class="skill__box-one">
+							<li>HTML 5</li>
+							<li>CSS 3</li>
+							<li>JS</li>
+							<li>SASS</li>
+							<li>BEM</li>
+						</ul>
+						<ul class="skill__box-two">
+							<li>DOM</li>
+							<li>Fotoshop</li>
+							<li>Chrome Dev Tools</li>
+							<li>Git and GitHub</li>
+							<li>API</li>
+						</ul>
+					</div>
+			</div>
+		</div>
+	</section>
+	<section id="portfolio">
+		<div class="gallary">
+			<div class="gallary__name">
+				<h2>Portfolio</h2>
+				<p>click to view video</p>
+			</div>
+			<div class="gallary__video">
+				<div class="gallary__business">
+					<video src="video/Business.mp4" autoplay="autoplay" loop="loop" controls="controls" preload  poster="img/businessfon.png" title="business project"></video>
+				</div>
+				<div class="gallary__taxi">
+					<video src="video/Taxi.mp4" autoplay="autoplay" loop="loop" controls="controls" preload poster="img/taxifon.png" title="taxi project"></video>
+				</div>
+				<div class="gallary__timberhouse">
+					<video src="video/TimberHouse.mp4" autoplay="autoplay" loop="loop" controls="controls" preload poster="img/homefon.png" title="house project"></video>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer id="contact">
+		<div class="contact">
+			<div class="contact__name">
+				<h2>Contacts</h2>
+			</div>
+			<div class="contact__me">
+				<div class="contact__phone">
+					<a href="tel:+380669696402">my Phone</a>
+				</div>
+				<div class="contact__email">
+					<a href="mailto:ice2me1989@gmail.com">my Email</a>
+				</div>
+			</div>
+		<div class="contact__social">
+				<ul>
+					<li>
+						<a href="https://www.facebook.com/sergio.zuev.7">
+							<img src="img/facebook.png" alt="">
+						</a>
+					</li>
+						<li>
+							<a href="https://twitter.com/ice2me1">
+								<img src="img/twitter.png" alt="">
+							</a>
+						</li>
+					<li>
+						<a href="https://aboutme.google.com/u/0/?referer=gplus">
+							<img src="img/g+.png" alt="">
+						</a>
+					</li>
+						<li>
+							<a href="https://www.linkedin.com/in/serhiizuiev/">
+								<img src="img/linkedin.png" alt="">
+							</a>
+						</li>
+					<li>
+						<a href="https://github.com/ice2me">
+							<img src="img/Github.png" alt="">
+						</a>
+					</li>
+						<li>
+							<a href="https://www.youtube.com/channel/UCa9spqHGyLN2Emq1ZbvozuQ?view_as=subscriber">
+								<img src="img/youtube.png" alt="">
+							</a>
+						</li>
+					<li>
+						<a href="https://www.instagram.com/zuiev_serhii/?hl=ru">
+							<img src="img/Instagram.png" alt="">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
 	</footer>
-
 <script src="./js/main.js"></script>
+</div>
 </body>
 </html>

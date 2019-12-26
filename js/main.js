@@ -1,13 +1,7 @@
-const anchors = document.querySelectorAll('a[href*="#"]')
-for (let anchor of anchors) {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault()
-    
-    const blockID = anchor.getAttribute('href').substr(1)
-    
-    document.getElementById(blockID).scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
-    })
-  })
-}
+$(document).ready(function(){       // плавное перемещение страницы к нужному блоку
+	$("nav li a").click(function () {
+		elementClick = $(this).attr("href");
+		destination = $(elementClick).offset().top;
+		$("body,html").animate({scrollTop: destination }, 2500);
+	});
+});
