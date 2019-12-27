@@ -48,6 +48,10 @@ input
 		-webkit-appearance: none
 	&[type='number']
 		-moz-appearance: textfield
+button:active, button:focus
+	outline: none !important
+button::-moz-focus-inner
+	border: 0 !important
 button
 	cursor: pointer
 button::-moz-focus-inner
@@ -57,6 +61,9 @@ a,a:visited
 	text-decoration: none
 a:hover
 	text-decoration: none
+	outline: none !important
+video:active, video:focus
+	outline: none !important
 ul li
 	list-style: none
 img
@@ -169,23 +176,23 @@ $bl: #c92472
 	&__social
 		display: flex
 		justify-content: center
+		-webkit-flex-direction: row
+		-ms-flex-direction: row
+		flex-direction: row
+		-webkit-flex-wrap: wrap
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		position: relative
+		top: 35vh
 		ul
 			display: flex
-			-webkit-flex-direction: row
-			-ms-flex-direction: row
-			flex-direction: row
-			-webkit-flex-wrap: wrap
-			-ms-flex-wrap: wrap
-			flex-wrap: wrap
-			position: relative
-			top: 40vh
 			a
 				&:focus
 					outline: 5px solid red
 			img
 				padding: 0 20px
 				&:hover
-					transform: rotate(145deg)
+					transform: rotate(15deg)
 				@media screen and (max-width:900px)
 					width: 100%
 					height: 100%
@@ -199,48 +206,37 @@ $bl: #c92472
 					width: 100%
 					height: 100%
 					padding: 30px 1px
-				@media screen and (max-width:600px)
+				@media screen and (max-width:515px)
 					display: none
 	&__scroll
 		display: flex
 		justify-content: center
+		position: relative
+		top: 43vh
+		@media screen and (max-width:901px)
+			top: 41vh
+		@media screen and (max-width:515px)
+			top: 47vh
+		@media screen and (max-width:400px)
+			top: 75vh
 		a
-			display: block
-			position: relative
-			bottom: -45vh
-			left: 0vh
-			outline: none
-			z-index: 8
-			@media screen and (max-width:1400px)
-				bottom: -43vh
-			@media screen and (max-width:900px)
-				bottom: -39vh
-			@media screen and (max-width:800px)
-				bottom: -38vh
-			@media screen and (max-width:700px)
-				bottom: -37vh
-			@media screen and (max-width:600px)
-				bottom: -50vh
-			@media screen and (max-width:520px)
-				bottom: -45vh
-			@media screen and (max-width:400px)
-				bottom: -73vh
-			&:focus
-				outline: 5px solid red
-		img
+			z-index: 7
+		&-plus
+			z-index: 7
+			width: 80px
+			height: 80px
+			color: #1a1a1a
+			background: #ed1c5b
+			border-radius: 50%
+			border: none
+			transition: box-shadow 400ms cubic-bezier(.2,0,.7,1), transform 200ms cubic-bezier(.2,0,.7,1)
 			transform: rotate(180deg)
-			-webkit-transition: all .3s ease-in-out
-			-moz-transition: all .3s ease-in-out
-			-o-transition: all .3s ease-in-out
-			transition: all .3s ease-in-out
-			outline: none
-			z-index: 8
-			
-			&:hover
-				background: #282923
-				-webkit-border-radius: 50%
-				border-radius: 50%
-				transition: .7s ease-in-out
+			&:hover, &:focus
+				box-shadow: 0 0 1px 15px rgba(#8A3B58, 0.4), 0 0 1px 30px rgba(#8A3B58, 0.2), 0 0 1px 45px rgba(#8A3B58, 0.1)
+			&:focus
+				-webkit-border-radius: 50% 
+				border-radius: 50% 
+				box-shadow: 0 0 1px 15px rgba(#8A3B58, 0.4), 0 0 1px 30px rgba(#8A3B58, 0.2), 0 0 1px 45px rgba(#8A3B58, 0.1)
 .shadow
 	background-image: url(../img/shadow.png)
 	background-repeat: repeat-x
@@ -336,7 +332,8 @@ $bl: #c92472
 		&-contact
 			width: 150px
 .about__content-button
-	margin: 100px 0 0 100px
+	margin: 20px auto
+	
 	@media screen and (max-width:900px)
 		margin: 0 auto
 	button
@@ -348,10 +345,10 @@ $bl: #c92472
 		font-size: 16px
 		color: #000
 		&:hover, &:focus
+			box-shadow: 0 0 1px 15px rgba(#8A3B58, 0.4), 0 0 1px 30px rgba(#8A3B58, 0.2), 0 0 1px 45px rgba(#8A3B58, 0.1)
+		&:hover, &:focus
 			width: 250px
 			height: 60px
-			&:focus
-				outline: 5px solid red
 
 
 // ----------------------3-section-----------------------
@@ -450,7 +447,6 @@ $bl: #c92472
 			padding: 0px 35px 15px 30px
 		h2
 			font-size: 30px
-			
 	&__content
 		display: flex
 		-webkit-flex-direction: column
@@ -525,6 +521,7 @@ $bl: #c92472
 		justify-content: space-around
 		text-decoration: none
 		padding: 15px
+		cursor: pointer
 		video
 			width: 400px
 			height: 230px
@@ -566,14 +563,17 @@ $bl: #c92472
 		a
 			font-size: 28px
 			color: $bl
+			&:after
+				content: ""
+				font-size: 2.5em
+				line-height: 1.1em
 			&:hover, &:focus
 				color: #8eaae7
 				border: 1px solid $bl
 				background-color: $bl
 				-webkit-border-radius: 10px
 				border-radius: 10px
-				&:focus
-					outline: 5px solid red
+				box-shadow: 0 0 1px 15px rgba(#8A3B58, 0.4), 0 0 1px 30px rgba(#8A3B58, 0.2), 0 0 1px 45px rgba(#8A3B58, 0.1)
 	&__social
 		display: flex
 		justify-content: center
@@ -586,8 +586,6 @@ $bl: #c92472
 			-ms-flex-wrap: wrap
 			flex-wrap: wrap
 			a
-				&:focus
-					outline: 5px solid red
 			img
 				padding: 0 20px
 				&:hover
