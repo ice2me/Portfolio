@@ -18,15 +18,12 @@ html,body
 		font-size: 100%
 		line-height: 1
 		font-size: 14px
-		// padding: 0px 30px 0px 30px
-		font-family: 'Raleway', sans-serif
 		-ms-text-size-adjust: 100%
 		-moz-text-size-adjust: 100%
 		-webkit-text-size-adjust: 100%
 		margin: 0 auto
 		outline: none
 input,button,textarea
-	// font-family: inherit
 input::-ms-clear
 	display: none
 input
@@ -67,19 +64,16 @@ video:active, video:focus
 ul li
 	list-style: none
 img
-	// vertical-align: top
 h1,h2,h3,h4,h5,h6
 	font-size: inherit
-	// font-weight: inherit
 /*----------------------------Start--Project----------------*/
-
+// font-family: 'Audiowide', cursive
 $bl: #c92472
-
+$word:'Long Cang', cursive
 // ---------------------1-section-------------------
 .full
 	max-width: 100%
 	height: 100%
-
 .top
 	max-width: 100%
 	-webkit-background-size: cover
@@ -103,7 +97,6 @@ $bl: #c92472
 	margin: 0 auto
 	@media screen and (max-width:1400px)
 		background-image: url(../img/billboard21.jpg)
-
 	&__menu
 		width: 100%
 		padding: 10px
@@ -115,15 +108,9 @@ $bl: #c92472
 		justify-content: center
 		margin: 0 auto
 		z-index: 9 
-		background-color: rgba(248, 235, 226, 0.2)
+		background-color: #f08080
 		background-image: url(../img/shadow.png)
 		@media screen and (max-width:1800px)
-			max-width: 100%
-			left: 0%
-		@media screen and (max-width:1600px)
-			max-width: 100%
-			left: 0%
-		@media screen and (max-width:1400px)
 			max-width: 100%
 			left: 0%
 		ul
@@ -138,13 +125,16 @@ $bl: #c92472
 			flex-wrap: wrap
 			li
 				padding: 10px 20px
+				height: 20px
+				@media screen and (max-width:320px)
+					padding: 15px 8px
 				a
 					font-size: 15px
 					color: #242424
 					padding: 3px 3px
 					font-weight: bold
 					&:hover, &:focus
-						font-size: 18px
+						font-size: 16px
 						background-color: $bl
 						-webkit-border-radius: 10px
 						border-radius: 10px
@@ -153,26 +143,34 @@ $bl: #c92472
 	&__name
 		position: relative
 		top: 20vh
+		@media screen and (max-width:320px)
+			top: 30vh
 		h1
-			font-size: 70px
+			font-size: 100px
 			color: #242424
+			@media screen and (max-width:320px)
+			font-size: 30px
 	&__text
 		span
 			position: relative
-			top: 35vh
-			font-size: 20px
+			top: 25vh
+			font-size: 26px
 			color: #242424
-			line-height: 1.7
+			line-height: 1.2
+			@media screen and (max-width:320px)
+				top: 32vh
 			p
 				padding: 0 20px
 				width: 70%
-				height: 250px
 				display: inline-flex
-				@media screen and (max-width:700px)
+				@media screen and (max-width:710px)
 					margin: 0 auto
-					height: 250px
-				@media screen and (max-width:400px)
-					display: none
+					width: 95%
+					line-height: 1.2
+				@media screen and (max-width:320px)
+					width: 95%
+					line-height: 1.2
+					font-size: 14px
 	&__social
 		display: flex
 		justify-content: center
@@ -183,7 +181,9 @@ $bl: #c92472
 		-ms-flex-wrap: wrap
 		flex-wrap: wrap
 		position: relative
-		top: 35vh
+		top: 40vh
+		@media screen and (max-width:800px)
+			top: 30vh
 		ul
 			display: flex
 			a
@@ -205,54 +205,54 @@ $bl: #c92472
 				@media screen and (max-width:700px)
 					width: 100%
 					height: 100%
-					padding: 30px 1px
+					padding: 20px 1px
 				@media screen and (max-width:515px)
 					display: none
-	&__scroll
-		display: flex
-		justify-content: center
-		position: relative
-		top: 43vh
-		@media screen and (max-width:901px)
-			top: 41vh
-		@media screen and (max-width:515px)
-			top: 47vh
-		@media screen and (max-width:400px)
-			top: 75vh
-		a
-			z-index: 7
-		&-plus
-			z-index: 7
-			width: 80px
-			height: 80px
-			color: #1a1a1a
-			background: #ed1c5b
-			border-radius: 50%
-			border: none
-			transition: box-shadow 400ms cubic-bezier(.2,0,.7,1), transform 200ms cubic-bezier(.2,0,.7,1)
-			transform: rotate(180deg)
-			&:hover, &:focus
-				box-shadow: 0 0 1px 15px rgba(#8A3B58, 0.4), 0 0 1px 30px rgba(#8A3B58, 0.2), 0 0 1px 45px rgba(#8A3B58, 0.1)
-			&:focus
-				-webkit-border-radius: 50% 
-				border-radius: 50% 
-				box-shadow: 0 0 1px 15px rgba(#8A3B58, 0.4), 0 0 1px 30px rgba(#8A3B58, 0.2), 0 0 1px 45px rgba(#8A3B58, 0.1)
-.shadow
-	background-image: url(../img/shadow.png)
-	background-repeat: repeat-x
-	position: absolute
-	width: 100%
-	height: 140px
-	bottom: 0
-	left: 0
-	margin-bottom: -1px
+// 	&__scroll
+// 		display: flex
+// 		justify-content: center
+// 		position: relative
+// 		top: 43vh
+// 		@media screen and (max-width:901px)
+// 			top: 41vh
+// 		@media screen and (max-width:515px)
+// 			top: 47vh
+// 		@media screen and (max-width:400px)
+// 			top: 75vh
+// 		a
+// 			z-index: 7
+// 		&-plus
+// 			z-index: 7
+// 			width: 80px
+// 			height: 80px
+// 			color: #1a1a1a
+// 			background: #ed1c5b
+// 			border-radius: 50%
+// 			border: none
+// 			transition: box-shadow 400ms cubic-bezier(.2,0,.7,1), transform 200ms cubic-bezier(.2,0,.7,1)
+// 			transform: rotate(180deg)
+// 			&:hover, &:focus
+// 				box-shadow: 0 0 1px 15px rgba(#8A3B58, 0.4), 0 0 1px 30px rgba(#8A3B58, 0.2), 0 0 1px 45px rgba(#8A3B58, 0.1)
+// 			&:focus
+// 				-webkit-border-radius: 50% 
+// 				border-radius: 50% 
+// 				box-shadow: 0 0 1px 15px rgba(#8A3B58, 0.4), 0 0 1px 30px rgba(#8A3B58, 0.2), 0 0 1px 45px rgba(#8A3B58, 0.1)
+// .shadow
+// 	background-image: url(../img/shadow.png)
+// 	background-repeat: repeat-x
+// 	position: absolute
+// 	width: 100%
+// 	height: 140px
+// 	bottom: 0
+// 	left: 0
+// 	margin-bottom: -1px
 
 // ----------------------2-section-----------------------
 
 .about__me
 	background-repeat: repeat
+	background-color: #f5ebdf
 .about
-	// background-color: #e5adb3
 	background-repeat: repeat
 	height: 100%
 	margin: 0 auto
@@ -272,18 +272,23 @@ $bl: #c92472
 		align-items: center
 		height: 100%
 	&__foto
-		padding: 120px 100px 0 0
+		padding: 120px 80px 0 10px
 		@media screen and (max-width:980px)
 			padding: 60px 0 0 0
 		img
-			-webkit-border-radius: 50%
-			border-radius: 50%
+			-webkit-border-radius: 10px
+			border-radius: 10px
+			@media screen and (max-width:400px)
+				width: 200px
 	&__content
-		width: 50%
-		padding: 100px 0 0 0
+		width: 70%
+		padding: 40px 20px 0 0
 		@media screen and (max-width:980px)
 			padding: 30px 0 0 0
 			width: 80%
+		@media screen and (max-width:320px)
+			padding: 15px 0 0 0
+			width: 95%
 		&-me
 			display: flex
 			-webkit-align-items: center
@@ -301,20 +306,19 @@ $bl: #c92472
 			display: flex
 			-webkit-justify-content: center
 			justify-content: center
-			font-size: 20px
-			font-weight: bold
+			font-size: 22px
 			color: #242424
 			line-height: (1.3)
 			@media screen and (max-width:980px)
 				padding: 10px 20px
-			@media screen and (max-width:980px)
-				padding: 10px 30px
+			@media screen and (max-width:320px)
+				font-size: 18px
 		&-details
 			display: flex
 			-webkit-flex-direction: row
 			-ms-flex-direction: row
 			flex-direction: row
-			padding: 30px
+			padding: 20px 5px
 			@media screen and (max-width:900px)
 				display: flex
 				-webkit-align-items: center
@@ -326,17 +330,16 @@ $bl: #c92472
 				color: #242424
 				padding: 20px 0 20px 0
 			li
-				font-size: 14px
+				font-size: 16px
 				color: #242424
-				padding: 10px 0
+				padding: 6px 0
 		&-contact
 			width: 150px
 			a
-				font-size: 16px
+				font-size: 18px
 				color: #c92472
 .about__content-button
 	margin: 20px auto
-	
 	@media screen and (max-width:900px)
 		margin: 0 auto
 	button
@@ -347,17 +350,24 @@ $bl: #c92472
 		border-radius: 8px
 		font-size: 16px
 		color: #000
+		@media screen and (max-width:980px)
+			width: 100px
+		@media screen and (max-width:320px)
+			width: 80px
 		&:hover, &:focus
 			box-shadow: 0 0 1px 15px rgba(#8A3B58, 0.4), 0 0 1px 30px rgba(#8A3B58, 0.2), 0 0 1px 45px rgba(#8A3B58, 0.1)
 		&:hover, &:focus
 			width: 250px
 			height: 60px
-
+			@media screen and (max-width:980px)
+				width: 110px
+			@media screen and (max-width:320px)
+				width: 90px
 
 // ----------------------3-section-----------------------
 
 .education, .work
-	background-color: #eec0e9
+	background-color: #f5ebdf
 	max-width: 100%
 	height: 100%
 	display: flex
@@ -374,13 +384,17 @@ $bl: #c92472
 		-webkit-align-content: center
 		align-content: center
 		padding: 80px 30px 30px 30px
+	@media screen and (max-width: 320px)
+		padding: 50px 15px 15px 15px
 	&__left
 		font-size: 25px
 		padding: 0 100px 0 0
 		h2
 			padding: 0 30px 0 75px
-		@media screen and (max-width: 750px)
-			padding: 0 35px 0 30px
+			@media screen and (max-width: 750px)
+				padding: 0 35px 0 30px
+			@media screen and (max-width: 320px)
+				padding: 0 35px 0 65px
 	&__right
 		width: 100%
 		padding: 30px
@@ -392,12 +406,22 @@ $bl: #c92472
 		h2
 			font-size: 30px
 			padding-bottom: 20px
+			@media screen and (max-width: 320px)
+				font-size: 25px
+				padding-bottom: 15px
 		h3
-			font-size: 22px
+			font-size: 24px
 			padding-bottom: 20px
+			font-style: italic
+			@media screen and (max-width: 320px)
+				font-size: 22px
+				padding-bottom: 10px
 		span
-			font-size: 18px
+			font-size: 20px
 			padding-bottom: 35px
+			@media screen and (max-width: 320px)
+				font-size: 18px
+				padding-bottom: 20px
 		p
 			width: 80%
 			@media screen and (max-width: 900px)
@@ -410,10 +434,11 @@ $bl: #c92472
 			font-size: 30px
 			padding-bottom: 20px
 		h3
-			font-size: 22px
+			font-size: 24px
 			padding-bottom: 20px
+			font-style: italic
 		span
-			font-size: 18px
+			font-size: 20px
 			padding-bottom: 35px
 		p
 			width: 80%
@@ -427,7 +452,7 @@ $bl: #c92472
 // --------------4- section--------
 
 .skills
-	background-color: #e49ed8
+	background-color: #f5ebdf
 	max-width: 100%
 	height: 100%
 	display: flex
@@ -443,7 +468,9 @@ $bl: #c92472
 		flex-direction: column
 		-webkit-align-content: center
 		align-content: center
-		padding: 10px 30px 30px 30px
+		padding: 30px
+	@media screen and (max-width: 320px)
+			padding: 10px
 	&__name
 		padding: 0 100px 0 50px
 		@media screen and (max-width: 750px)
@@ -458,19 +485,26 @@ $bl: #c92472
 		padding-left: 50px
 		@media screen and (max-width: 750px)
 			padding-left: 30px
+		@media screen and (max-width: 320px)
+			padding-left: 10px
 	&__text
 		width: 100%
 		@media screen and (max-width: 750px)
 			width: 100%
 		p
-			font-size: 18px
+			font-size: 20px
 			padding-bottom: 35px
-			width: 80%
+			width: 95%
 .skill__box
 	padding-bottom: 50px
 	display: inline-flex
 	-webkit-justify-content: flex-start
 	justify-content: flex-start
+	@media screen and (max-width: 530px)
+		-webkit-flex-direction: column
+		-ms-flex-direction: column
+		flex-direction: column
+		margin: 0 auto
 	&-one, &-two
 		display: flex
 		-webkit-flex-direction: column
@@ -481,9 +515,8 @@ $bl: #c92472
 		flex-wrap: wrap
 	ul
 		padding-right: 50px
-
 	li
-		font-size: 22px
+		font-size: 24px
 		font-weight: bold
 
 // -------------5- section--------
@@ -500,7 +533,9 @@ $bl: #c92472
 	-ms-flex-wrap: wrap
 	flex-wrap: wrap
 	padding: 50px 0
-	background-color: #efb8b8 
+	background-color: #f5ebdf
+	@media screen and (max-width:500px)
+		padding: 0
 	&__name
 		text-align: center
 		h2
@@ -530,18 +565,23 @@ $bl: #c92472
 			height: 230px
 			-webkit-border-radius: 10px
 			border-radius: 10px
+			&:hover, &:focus
+				width: 420px
 			@media screen and (max-width:500px)
 				width: 300px
 				height: 130px
 				margin-top: 30px
-			&:hover, &:focus
-				width: 410px
-				height: 240px
+				&:hover, &:focus
+					width: 320px
+			@media screen and (max-width:320px)
+				width: 150px
+				height: 80px
+				margin-top: 10px
+				&:hover, &:focus
+					width: 170px
 	&__business, &__taxi, &__timberhouse
 
 // --------foter---------
-
-
 
 .contact
 	margin: 0 auto
@@ -549,7 +589,9 @@ $bl: #c92472
 	text-align: center
 	padding: 30px 0 80px 0
 	height: 100%
-	background-color: #efa0a0
+	background-color: #f5ebdf
+	@media screen and (max-width:320px)
+		padding: 25px
 	&__me
 		display: flex
 		-webkit-flex-direction: row
@@ -566,6 +608,8 @@ $bl: #c92472
 		a
 			font-size: 28px
 			color: $bl
+			@media screen and (max-width:320px)
+				font-size: 20px
 			&:after
 				content: ""
 				font-size: 2.5em
