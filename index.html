@@ -13,31 +13,37 @@
 <body>
 	<div class="full">
 	<header class="top">
-		<nav class="top__menu">
-			<ul>
-				<li>
-					<a href="#top__page">HOME</a>
-				</li>
-				<li>
-					<a href="#about__me">ABOUT</a>
-				</li>
-				<li>
-					<a href="#education">RESUME</a>
-				</li>
-				<li>
-					<a href="#work">WORKS</a>
-				</li>
-				<li>
-					<a href="#skills">SKILLS</a>
-				</li>
-				<li>
-					<a href="#portfolio">PORTFOLIO</a>
-				</li>
-				<li>
-					<a href="#contacts">CONTACTS</a>
-				</li>
-			</ul>
-		</nav>
+		<div class="burger-menu"> <!-- создание кнопки с крестиком  burger-menu_active  -->
+			<a href="#" class="burger-menu__button">
+				<span class="burger-menu__lines"></span> <!-- создание самой кнопки -->
+			</a>
+			<nav class="burger-menu__nav">
+				<ul>
+					<li>
+						<a href="#top__page" class="burger-menu__link">HOME</a>
+					</li>
+					<li>
+						<a href="#about__me" class="burger-menu__link">ABOUT</a>
+					</li>
+					<li>
+						<a href="#education" class="burger-menu__link">RESUME</a>
+					</li>
+					<li>
+						<a href="#work" class="burger-menu__link">WORKS</a>
+					</li>
+					<li>
+						<a href="#skills" class="burger-menu__link">SKILLS</a>
+					</li>
+					<li>
+						<a href="#portfolio" class="burger-menu__link">PORTFOLIO</a>
+					</li>
+					<li>
+						<a href="#contacts" class="burger-menu__link">CONTACTS</a>
+					</li>
+				</ul>
+			</nav>
+				<div class="burger-menu__overlay"></div>
+		</div>
 		<section id="top__page">
 		<div class="top__name">
 			<h1>I'm Serhii Zuiev</h1>
@@ -322,6 +328,7 @@ VANTA.GLOBE({
 	size: 0.50
 })
 </script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="js/main.js"></script>
 </div>
 </body>
