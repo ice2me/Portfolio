@@ -128,11 +128,6 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   margin: 0 auto;
 }
-@media screen and (max-width: 1400px) {
-  .top {
-    background-image: url(../img/billboard21.jpg);
-  }
-}
 .top__menu {
   width: 100%;
   padding: 10px;
@@ -166,7 +161,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .top__menu ul li {
   padding: 10px 20px;
-  height: 20px;
+  height: 30px;
 }
 @media screen and (max-width: 320px) {
   .top__menu ul li {
@@ -332,7 +327,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (max-width: 400px) {
   .about__foto img {
-    width: 200px;
+    width: 120px;
+    height: 140px;
   }
 }
 .about__content {
@@ -384,7 +380,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (max-width: 320px) {
   .about__content span {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 .about__content-details {
@@ -490,7 +486,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (max-width: 320px) {
   .education, .work {
-    padding: 50px 15px 15px 15px;
+    padding: 10px 0;
   }
 }
 .education__left, .work__left {
@@ -508,6 +504,7 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 320px) {
   .education__left h2, .work__left h2 {
     padding: 0 35px 0 65px;
+    font-size: 20px;
   }
 }
 .education__right, .work__right {
@@ -523,13 +520,18 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 60px;
   border-bottom: 1px dashed #242424;
 }
+@media screen and (max-width: 320px) {
+  .education__right-top, .work__right-top {
+    padding-bottom: 15px;
+  }
+}
 .education__right-top h2, .work__right-top h2 {
   font-size: 30px;
   padding-bottom: 20px;
 }
 @media screen and (max-width: 320px) {
   .education__right-top h2, .work__right-top h2 {
-    font-size: 25px;
+    font-size: 18px;
     padding-bottom: 15px;
   }
 }
@@ -540,7 +542,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (max-width: 320px) {
   .education__right-top h3, .work__right-top h3 {
-    font-size: 22px;
+    font-size: 17px;
     padding-bottom: 10px;
   }
 }
@@ -550,7 +552,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (max-width: 320px) {
   .education__right-top span, .work__right-top span {
-    font-size: 18px;
+    font-size: 16px;
     padding-bottom: 20px;
   }
 }
@@ -567,18 +569,38 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 1px dashed #242424;
   padding-bottom: 60px;
 }
+@media screen and (max-width: 320px) {
+  .education__right-bottom, .work__right-bottom {
+    padding-bottom: 15px;
+  }
+}
 .education__right-bottom h2, .work__right-bottom h2 {
   font-size: 30px;
   padding-bottom: 20px;
+}
+@media screen and (max-width: 320px) {
+  .education__right-bottom h2, .work__right-bottom h2 {
+    font-size: 18px;
+  }
 }
 .education__right-bottom h3, .work__right-bottom h3 {
   font-size: 24px;
   padding-bottom: 20px;
   font-style: italic;
 }
+@media screen and (max-width: 320px) {
+  .education__right-bottom h3, .work__right-bottom h3 {
+    font-size: 17px;
+  }
+}
 .education__right-bottom span, .work__right-bottom span {
   font-size: 20px;
   padding-bottom: 35px;
+}
+@media screen and (max-width: 320px) {
+  .education__right-bottom span, .work__right-bottom span {
+    font-size: 16px;
+  }
 }
 .education__right-bottom p, .work__right-bottom p {
   width: 80%;
@@ -595,6 +617,11 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 980px) {
   .work {
     padding: 30px;
+  }
+}
+@media screen and (max-width: 980px) and (max-width: 320px) {
+  .work {
+    padding: 0;
   }
 }
 
@@ -636,6 +663,11 @@ h1, h2, h3, h4, h5, h6 {
 .skills__name h2 {
   font-size: 30px;
 }
+@media screen and (max-width: 320px) {
+  .skills__name h2 {
+    font-size: 20px;
+  }
+}
 .skills__content {
   display: flex;
   -webkit-flex-direction: column;
@@ -666,6 +698,11 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 35px;
   width: 95%;
 }
+@media screen and (max-width: 320px) {
+  .skills__text p {
+    font-size: 16px;
+  }
+}
 
 .skill__box {
   padding-bottom: 50px;
@@ -679,6 +716,11 @@ h1, h2, h3, h4, h5, h6 {
     -ms-flex-direction: column;
     flex-direction: column;
     margin: 0 auto;
+  }
+}
+@media screen and (max-width: 320px) {
+  .skill__box {
+    padding-bottom: 0;
   }
 }
 .skill__box-one, .skill__box-two {
@@ -696,6 +738,11 @@ h1, h2, h3, h4, h5, h6 {
 .skill__box li {
   font-size: 24px;
   font-weight: bold;
+}
+@media screen and (max-width: 320px) {
+  .skill__box li {
+    font-size: 18px;
+  }
 }
 
 .gallary {
@@ -725,10 +772,20 @@ h1, h2, h3, h4, h5, h6 {
   color: #000;
   padding: 50px 0 20px 0;
 }
+@media screen and (max-width: 320px) {
+  .gallary__name h2 {
+    font-size: 20px;
+  }
+}
 .gallary__name p {
   font-size: 28px;
   color: #000;
   padding: 10px;
+}
+@media screen and (max-width: 320px) {
+  .gallary__name p {
+    font-size: 18px;
+  }
 }
 .gallary__video {
   width: 100%;
@@ -802,8 +859,18 @@ h1, h2, h3, h4, h5, h6 {
 .contact__name h2 {
   font-size: 40px;
 }
+@media screen and (max-width: 320px) {
+  .contact__name h2 {
+    font-size: 20px;
+  }
+}
 .contact__phone, .contact__email {
   padding: 20px 40px 30px 40px;
+}
+@media screen and (max-width: 320px) {
+  .contact__phone, .contact__email {
+    padding: 20px 15px;
+  }
 }
 .contact__phone a, .contact__email a {
   font-size: 28px;
@@ -811,7 +878,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (max-width: 320px) {
   .contact__phone a, .contact__email a {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 .contact__phone a:after, .contact__email a:after {
@@ -842,6 +909,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 .contact__social ul img {
   padding: 0 20px;
+}
+@media screen and (max-width: 320px) {
+  .contact__social ul img {
+    width: 80%;
+  }
 }
 .contact__social ul img:hover {
   transform: rotate(-154deg);
