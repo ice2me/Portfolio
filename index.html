@@ -13,31 +13,37 @@
 <body>
 	<div class="full">
 	<header class="top">
-		<nav class="top__menu">
-			<ul>
-				<li>
-					<a href="#top__page">HOME</a>
-				</li>
-				<li>
-					<a href="#about__me">ABOUT</a>
-				</li>
-				<li>
-					<a href="#education">RESUME</a>
-				</li>
-				<li>
-					<a href="#work">WORKS</a>
-				</li>
-				<li>
-					<a href="#skills">SKILLS</a>
-				</li>
-				<li>
-					<a href="#portfolio">PORTFOLIO</a>
-				</li>
-				<li>
-					<a href="#contacts">CONTACTS</a>
-				</li>
-			</ul>
-		</nav>
+		<div class="burger-menu"> <!-- создание кнопки с крестиком  burger-menu_active  -->
+			<a href="#" class="burger-menu__button">
+				<span class="burger-menu__lines"></span> <!-- создание самой кнопки -->
+			</a>
+			<nav class="burger-menu__nav">
+				<ul>
+					<li>
+						<a href="#top__page" class="burger-menu__link">HOME</a>
+					</li>
+					<li>
+						<a href="#about__me" class="burger-menu__link">ABOUT</a>
+					</li>
+					<li>
+						<a href="#education" class="burger-menu__link">RESUME</a>
+					</li>
+					<li>
+						<a href="#work" class="burger-menu__link">WORKS</a>
+					</li>
+					<li>
+						<a href="#skills" class="burger-menu__link">SKILLS</a>
+					</li>
+					<li>
+						<a href="#portfolio" class="burger-menu__link">PORTFOLIO</a>
+					</li>
+					<li>
+						<a href="#contacts" class="burger-menu__link">CONTACTS</a>
+					</li>
+				</ul>
+			</nav>
+				<div class="burger-menu__overlay"></div>
+		</div>
 		<section id="top__page">
 		<div class="top__name">
 			<h1>I'm Serhii Zuiev</h1>
@@ -45,12 +51,12 @@
 		<div class="top__text">
 			<span>
 					<p>
-						Living, learning, & leveling up one day at a time...<br/><br/>
-						Ambitious, friendly, and kamunikativny. Quick study of new
-						information and solving complex issues with all ambitions and
-						creative approach. Extensive experience in the theory and methodology
-						of website development. I have extensive knowledge of HTML, CSS (SASS),
-						entry-level in ECMAScript, UI/UX
+						Living, learning, & leveling up  with each passing day...<br/><br/>
+						Ambitious, friendly flexible and communicative. Quick in learning 
+						new information and able to solve complex tasks employing effective 
+						methods and creative thinking. Have considerable experience in the theory 
+						and methodology of website development and comprehensive expertise of HTML, 
+						CSS (SASS), entry-level in ECMAScript, UI/UX
 					</p>
 			</span>
 		</div>
@@ -105,19 +111,16 @@
 				<div class="about__content-me">
 					<h2>About Me</h2>
 					<span>
-						Greetings, my friend. <br/>
-						Since the beginning of my journey 
-						as a front-end developer for more than 6 months, I have 
-						been diligently studying and improving my skills in this 
-						direction every day to become a guru in this difficult task. 
-						I bring great pleasure to code and create beautiful things from 
-						scratch, to solve puzzles that appear during work on a project, 
-						and of course a happy user is a cherry on the cake. I am firmly 
-						convinced that you can create websites and web applications that 
-						will not only look very cool, but will also be very pleasant in 
-						interacting with the user and I will put all my knowledge and hand 
-						to it :)<br/><br/><br/>
-						... and I like what I do!
+							Greetings, my friend!<br><br><br>
+							Since the beginning of my journey as a front-end developer for 
+							more than 6 months, I have been diligently studying and improving my skills in 
+							this direction to become a guru here. I have managed to get maximum from my education 
+							so now I am a professional in coding, turning plane things into beautiful ones and solving 
+							challenges that appear during my work on any project, and, of course, being a 
+							happy user - is a cherry on the cake. It is my considered opinion that we can create websites 
+							and web applications that will not only look really cool, but will also be interractive, 
+							attractive and useful to every user. I will emply all my knowledge, 
+							skills and soul to my future projects because I like what I do!
 					</span>
 				</div>
 				<div class="about__content-details">
@@ -151,12 +154,11 @@
 			</div>
 			<div class="education__right">
 				<div class="education__right-top">
-					<h2>Academy of Engineering</h2>
-					<h3>Specialty heat power engineering  September 1/2007 - June 25/2012</h3>
+					<h2>Zaporizhzhya State Engineering Academy</h2>
+					<h3>speciality - Heat and Power Engineering • September 1/2007 - June 25/2012.</h3>
 					<p>
 						<span>
-							Received a specialist in thermal power and energy 
-							networks at the Zaporizhzhya State Engineering Academy.
+							Got the Specialist diploma in  Heating Systems and Heat and Power Units.
 						</span>
 					</p>
 				</div>
@@ -165,7 +167,7 @@
 					<h3>Front-end developer  September 18/2019 - December 11/2019</h3>
 					<p>
 						<span>
-							Graduated courses in front-end developer in the company PowerCode.
+							Finished the courses in front-end developer in the company PowerCode.
 						</span>
 					</p>
 				</div>
@@ -186,8 +188,7 @@
 					<h3>Front-end developer  September 18/2019 - December 11/2019</h3>
 					<p>
 						<span>
-							Graduated courses in front-end developer in the company PowerCode
-							with a large finished project at the end.
+							Finished the courses in front-end developer in the company PowerCode with a great final project.
 						</span>
 					</p>
 				</div>
@@ -197,8 +198,8 @@
 					<p>
 						<span>
 							The development of multi-page sites and landing pages, 
-							cross-browser layout and adaptiv, interaction with customers 
-							directly and the support of their projects after release for some time.
+							cross-browser layout and adaptation, direct interaction 
+							with customers and the first-time support of their projects after the release.
 						</span>
 					</p>
 				</div>
@@ -217,7 +218,7 @@
 				<div class="skills__text">
 					<p>
 						Below is a list of technologies that I have mastered and
-						continue to develop in their improvement and expand my knowledge
+						continue to develop in order to improve and expand my knowledge:
 					</p>
 				</div>
 					<div class="skill__box">
@@ -322,6 +323,7 @@ VANTA.GLOBE({
 	size: 0.50
 })
 </script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="js/main.js"></script>
 </div>
 </body>
