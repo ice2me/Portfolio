@@ -142,6 +142,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .top__menu{
   left: 0;
+<<<<<<< HEAD
 }
 
 .top__menu{
@@ -175,6 +176,41 @@ h1, h2, h3, h4, h5, h6 {
   .burger-menu__button{
 	width: 50px;
 	height: 50px;
+=======
+}
+
+.top__menu{
+  padding: 150px 50px;
+  font-size: 32px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #FFF;
+}
+.top__menu a{
+  padding-top: 30px;
+  color: #FFF;
+}
+.top__menu li{
+  padding: 10px;
+}
+.burger-menu {}
+.burger-menu__button {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 30;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color:#ff6347;
+  transition: 0.4s
+}
+@media screen and (max-width: 320px){
+  .burger-menu__button{
+    width: 50px;
+    height: 50px;
+>>>>>>> 3b36f506b9fa8f39cdea0c01a94a2e469076c906
   }
 }
 .burger-menu__button:hover .burger-menu__lines{
@@ -194,13 +230,21 @@ h1, h2, h3, h4, h5, h6 {
   left: 41px;
   transform: translate(-50%, -50%);
 }
+<<<<<<< HEAD
 @media screen and (max-width: 480px){
+=======
+@media screen and (max-width: 320px){
+>>>>>>> 3b36f506b9fa8f39cdea0c01a94a2e469076c906
 .burger-menu__lines,
 .burger-menu__lines::after,
 .burger-menu__lines::before{
   width: 30px;
 }}
+<<<<<<< HEAD
 @media screen and (max-width: 480px){
+=======
+@media screen and (max-width: 320px){
+>>>>>>> 3b36f506b9fa8f39cdea0c01a94a2e469076c906
 .burger-menu__lines{
   top: 25px;
   left: 25px;
@@ -215,6 +259,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 12px;
   left: 0;
 }
+<<<<<<< HEAD
 @media screen and (max-width: 480px){
 .burger-menu__lines::before {
 	content: "";
@@ -227,6 +272,20 @@ h1, h2, h3, h4, h5, h6 {
 	content: "";
 	top: 11px;
 	left: 0px;
+=======
+@media screen and (max-width: 320px){
+.burger-menu__lines::before {
+    content: "";
+    top: -11px;
+    left: 0px;
+}
+}
+@media screen and (max-width: 320px){
+.burger-menu__lines::after {
+    content: "";
+    top: 11px;
+    left: 0px;
+>>>>>>> 3b36f506b9fa8f39cdea0c01a94a2e469076c906
 }
 }
 
@@ -269,11 +328,19 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 5px;
   color: #FFF;
 }
+<<<<<<< HEAD
 @media screen and (max-width: 480px){
   .burger-menu__nav{
 	width: 100%;
 	font-size: 20px;
 	padding: 50px 0 0px 0;
+=======
+@media screen and (max-width: 320px){
+  .burger-menu__nav{
+    width: 100%;
+    font-size: 20px;
+    padding: 50px 0 10px 0;
+>>>>>>> 3b36f506b9fa8f39cdea0c01a94a2e469076c906
   }
 }
 .burger-menu__nav a{
