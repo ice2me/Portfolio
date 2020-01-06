@@ -2,12 +2,12 @@ $(document).ready(function(){       // плавное перемещение с�
 	$("nav li a").click(function () {
 		elementClick = $(this).attr("href");
 		destination = $(elementClick).offset().top;
-		$("body,html").animate({scrollTop: destination }, 800);
+		$("body,html").animate({scrollTop: destination }, 1800);
 	});
 });
 
 
-function burgerMenu(selector) {
+function burgerMenu(selector) {         // работа бургер меню
 	let menu = $(selector);
 	let button = menu.find('.burger-menu__button');
 	let links = menu.find('.burger-menu__link');
@@ -33,3 +33,29 @@ function burgerMenu(selector) {
 }
 
 burgerMenu('.burger-menu');
+
+
+$(window).scroll(function() {
+	if ($(this).scrollTop() > 100) {
+	if ($('#button__up').is(':hidden')) {
+	$('#button__up').css({opacity : 3}).fadeIn(2000);
+	}
+}
+	else { $('#button__up').stop(true, false).fadeOut(50);
+}
+});
+	$('#button__up').click(function() {
+	$('html, body').stop().animate({scrollTop : 0}, 1500);
+});
+
+
+
+$(document). ready(function(){
+	$('.block__title').click(function(event){
+		if($('.block').hasClass('one')){
+			$('.block__title').not($(this)).removeClass('active');
+			$('.block__text').not($(this).next()).slideUp(300);
+		}
+		$(this).toggleClass('active').next().slideToggle(300);
+	})
+})
