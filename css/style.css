@@ -263,7 +263,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .burger-menu__nav{
-	padding: 150px 50px;
+	padding: 80px 50px;
 	font-size: 32px;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -918,9 +918,6 @@ h1, h2, h3, h4, h5, h6 {
 	height: 320px;
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
-}
-.gallary__video video:hover, .gallary__video video:focus {
-	width: 480px;
 }
 @media screen and (max-width: 1027px) {
 	.gallary__video video {
