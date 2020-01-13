@@ -280,6 +280,9 @@ h1, h2, h3, h4, h5, h6 {
 .burger-menu__nav a{
 	color: #FFF;
 }
+.burger-menu__nav a:hover{
+	color: ##b2b2b2;
+}
 .burger-menu__nav li{
 	padding: 15px;
 }
@@ -545,13 +548,15 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 .about__content-button button {
-	width: 150px;
+	width: 170px;
 	height: 50px;
 	background-color: #c92472;
 	-webkit-border-radius: 8px;
 	border-radius: 8px;
 	font-size: 16px;
-	color: #000;
+	color: #fff;
+	font-weight: bold;
+	padding: 5px;
 }
 @media screen and (max-width: 980px) {
 	.about__content-button button {
@@ -643,6 +648,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .education__right-top h2, .work__right-top h2 {
 	font-size: 23px;
+	padding: 10px;
 }
 @media screen and (max-width: 480px) {
 	.education__right-top h2, .work__right-top h2 {
@@ -689,6 +695,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .education__right-bottom h2, .work__right-bottom h2 {
 	font-size: 23px;
+	padding: 10px;
 }
 @media screen and (max-width: 480px) {
 	.education__right-bottom h2, .work__right-bottom h2 {
@@ -787,6 +794,7 @@ h1, h2, h3, h4, h5, h6 {
 	-ms-flex-direction: column;
 	flex-direction: column;
 	width: 100%;
+	padding-right: 30px;
 }
 @media screen and (max-width: 750px) {
 	.skills__content {
@@ -836,6 +844,18 @@ h1, h2, h3, h4, h5, h6 {
 	padding-bottom: 0;
 	}
 }
+.skill__box p {
+	width: 35%;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 10px 8px;
+}
+@media screen and (max-width: 530px) {
+	.skill__box p {
+		margin: 0 auto;
+		padding-bottom: 15px;
+	}
+}
 .skill__box-one, .skill__box-two {
 	display: flex;
 	-webkit-flex-direction: column;
@@ -844,6 +864,7 @@ h1, h2, h3, h4, h5, h6 {
 	-webkit-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
+	padding-bottom: 8px;
 }
 .skill__box li {
 	font-size: 24px;
@@ -996,7 +1017,7 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: 1.1em;
 }
 .contact__phone a:hover, .contact__phone a:focus, .contact__email a:hover, .contact__email a:focus {
-	color: #8eaae7;
+	color: #b2b2b2;
 	border: 1px solid #c92472;
 	background-color: #c92472;
 	-webkit-border-radius: 10px;
@@ -1047,10 +1068,11 @@ h1, h2, h3, h4, h5, h6 {
 	height: 80px;
 	-webkit-border-radius: 50%;
 			border-radius: 50%;
+	background-color: #FFF;
 
 }
 .button__up img:hover{
-	background-color: #bfbfbf;
+	background-color: #b2b2b2;
 }
 @media screen and (max-width: 900px) {
 	.button__up img{
@@ -1077,8 +1099,9 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 20px;
 }
 .block__title p{
-	padding: 0;
+	padding: 10px 0;
 	font-weight: bold;
+	font-size: 24px;
 }
 .block__title:before, .block__title:after {
 	content: "";
